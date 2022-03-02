@@ -1,0 +1,87 @@
+:root {
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--very-dark-blue-main-bg: hsl(217, 54%, 11%);
+--very-dark-blue-card-bg: hsl(216, 50%, 16%);
+--very-dark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%)
+}
+
+
+body {
+	background-color: var(--very-dark-blue-main-bg);
+	font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+	color: var(--white);
+}
+
+p {
+	font-size: 18px;
+}
+
+
+hr {
+	border: .1px solid var(--very-dark-blue-line);
+}
+
+.container {
+	width: 340px;
+	padding: 30px;
+	border-radius: 20px;
+	background-color: var(--very-dark-blue-card-bg);
+	color: var(--white);
+	color: var(--soft-blue);
+}
+
+.equilibrium {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.info {
+	padding: 0px;
+	margin: 0px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left,
+.right {
+	display: flex;
+	align-items: center;
+} 
+
+.left p {
+	color: var(--cyan);
+}
+
+.left svg {
+	padding-right: 5px;
+}
+
+.right svg {
+	padding-right: 5px;
+}
+
+.row.bottom {
+	justify-content: start;
+	align-items: flex-end;
+}
+
+.avatar {
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	object-fit: cover;
+	width: 15%;
+	margin: 10px 20px 0 0;
+	height: auto;
+}
+
+.row span {
+	color: var(--white)
+}
